@@ -11,8 +11,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {Helmet} from "react-helmet";
 
-import { useEffect } from "react"
-
 const useScript = (url, integrity, async = true, crossOrigin = "anonymous") => {
   useEffect(() => {
     const script = document.createElement("script")
