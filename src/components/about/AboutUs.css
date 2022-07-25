@@ -59,13 +59,7 @@ display: flex;
     border: 1px solid rgba(119, 119, 119, 0.596);
     border-radius: 8px;
 }
-.iimage-box{
-    max-width: 500px;
-    flex: 1 1 calc((500px - 100%) * 9999);
-    /* 500px is the screen width at which the break from side by side to column occurs - obviously to be adjusted as suits you */  
-    min-width: calc(50% - 20px);
-    aspect-ratio: 1 / 1;
-}
+
 
 .iimage-box img{
     width: 100%;
