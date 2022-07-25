@@ -73,7 +73,22 @@
     object-fit: cover;
     object-position: center;
     }
-    
+    .iimage-box{
+      max-width: 500px;
+
+      /* 500px is the screen width at which the break from side by side to column occurs - obviously to be adjusted as suits you */  
+      min-width: calc(50% - 20px);
+      aspect-ratio: 1 / 1;
+  }
+  
+      .price-box{
+
+      min-width: calc(50% - 20px);
+      display: flex;
+      flex-direction: column;
+      text-align:left;
+      gap:20px;
+      }
 
     .description-box{
       max-width: 500px;
