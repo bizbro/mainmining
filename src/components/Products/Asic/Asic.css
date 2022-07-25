@@ -69,14 +69,6 @@
       margin-bottom: 12em;
     }
 
-/* .iimage-box{
-    max-width: 500px;
-    flex: 1 1 calc((500px - 100%) * 9999);
-    /* 500px is the screen width at which the break from side by side to column occurs - obviously to be adjusted as suits you */  
-    min-width: calc(50% - 20px);
-    aspect-ratio: 1 / 1;
-} */
-
     .minerspec{
       position: absolute;
       padding-bottom: 355px;
@@ -91,14 +83,7 @@
     object-position: center;
     }
     
-    .price-box{
-    flex: 1 1 calc((500px - 100%) * 9999);
-    min-width: calc(50% - 20px);
-    display: flex;
-    flex-direction: column;
-    text-align:left;
-    gap:20px;
-    }
+
     
     .description-box{
     max-width: 500px;
