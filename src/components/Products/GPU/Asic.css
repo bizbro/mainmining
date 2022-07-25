@@ -1,0 +1,130 @@
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    body{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    height: auto;
+    min-height: 100vh;
+    font-family:sans-serif;
+    }
+    
+    .ccontainer{
+    top: 50px;
+    position: relative;
+    width: 100%;
+    max-width: 1065px;
+    margin: 20px auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    
+    border: 1px solid rgba(119, 119, 119, 0.596);
+    border-radius: 8px;
+
+    }
+
+    .pp1{
+      color: rgb(165, 134, 33);
+      padding-left: 10px;
+      margin-top: 40%;
+    }
+
+    .nis{
+      color: rgb(126, 0, 0);
+      padding-left: 10px;
+    }
+    
+    .bbox{
+    width: 500px;
+    position: relative;
+    display: grid;
+    background: white;
+    padding: 20px;
+    border: 1px solid rgba(119, 119, 119, 0.596);
+    border-radius: 8px;
+    }
+    ul.separator {
+      list-style: none;
+      padding: 0;
+      width: 100%;
+    }
+    
+    ul.separator li {
+      padding: .5em 0;
+      border-bottom: 1px solid #CCC;
+    }
+    
+    ul.separator li:last-child {
+      border-bottom: 0;
+    }
+ 
+
+    .image-box{
+      max-width: 500px;
+    flex: 1 1 calc((500px - 100%) * 9999);
+    /* 500px is the screen width at which the break from side by side to column occurs - obviously to be adjusted as suits you */  
+    min-width: calc(50% - 20px);
+    aspect-ratio: 1 / 1;
+    }
+    
+    .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    }
+    
+    .minprodheight{
+      margin-bottom: 12em;
+    }
+
+    .price-box{
+    flex: 1 1 calc((500px - 100%) * 9999);
+    min-width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    gap:20px;
+    }
+    
+    .description-box{
+      max-width: 500px;
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 50%;
+    height: auto;
+    overflow: hidden;
+    }
+    
+    .box-inner{
+    width: calc(100% - 30px);
+    background: white;
+    padding: 20px;
+    overflow:hidden;
+    }
+
+    .image-box-inner{
+    height: calc(100% - 30px);
+
+    }
+    .price-box-inner{
+    height: calc(100% - 30px);
+    }
+    
+    .description-box-inner{
+    height: auto !important;
+    min-height:100px;
+    }
+    
+    .cardwidth{
+      width: 400;
+    }

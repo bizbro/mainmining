@@ -1,0 +1,39 @@
+.flash {
+  background: #f6f9fc;
+  padding: 50px 0;
+}
+.c {
+  text-align: center;
+  color: rgb(71, 71, 71);
+}
+
+#textbox {display:flex; flex-flow:row wrap;}
+
+.alignleft {
+width:33.33333%;
+text-align:left;
+}
+.aligncenter {
+width:33.33333%;
+text-align:center;
+}
+.alignright {
+width:33.33333%;
+text-align:right;
+}
+
+.colorgrey {
+  color: rgb(92, 42, 48);
+}
+
+.ccenter {
+  padding-top: 5%;
+  text-align: center;
+  font-size: 122%;
+  content:'';
+  flex:1;
+  border-bottom:groove 2px;
+  margin:auto 0.25em;
+  /* ou 0 1px si border-style:ridge */
+}
+

@@ -1,0 +1,23 @@
+.form-control {
+    display: block;
+    width: 100%;
+  }
+  .head1-control {
+    position: center;
+  }
+
+  .mailcontainer{
+
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+    border: 1px solid rgba(119, 119, 119, 0.596);
+    border-radius: 8px;
+    justify-content: center;
+    background: rgb(212, 200, 200);
+}
+
+.mccinheight{
+    margin-bottom: 15em;
+}

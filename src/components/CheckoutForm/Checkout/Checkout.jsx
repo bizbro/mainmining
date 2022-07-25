@@ -5,6 +5,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { commerce } from '../../../lib/commerce';
 import AddressForm from '../AddressForm';
 import PaymentForm from '../PaymentForm';
+import Review from '../Review';
 import useStyles from './styles';
 
 const steps = ['Shipping address', 'Payment details'];
@@ -67,9 +68,12 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
     );
   }
 
+  //  const Form = () => (activeStep === 0
+  //    ? <Review checkoutToken={checkoutToken} nextStep={nextStep} setShippingData={setShippingData} test={test} />
+  //    : <AddressForm checkoutToken={checkoutToken} nextStep={nextStep} backStep={backStep} shippingData={shippingData} onCaptureCheckout={onCaptureCheckout} />);
   const Form = () => (activeStep === 0
     ? <AddressForm checkoutToken={checkoutToken} nextStep={nextStep} setShippingData={setShippingData} test={test} />
-    : <PaymentForm checkoutToken={checkoutToken} nextStep={nextStep} backStep={backStep} shippingData={shippingData} onCaptureCheckout={onCaptureCheckout} />);
+    : <Review checkoutToken={checkoutToken} nextStep={nextStep} backStep={backStep} shippingData={shippingData} onCaptureCheckout={onCaptureCheckout} />);
 
   return (
     <>

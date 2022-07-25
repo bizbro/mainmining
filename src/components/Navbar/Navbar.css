@@ -1,0 +1,110 @@
+.ccontent {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    margin: 1 auto;
+    padding: 10px 0;
+    text-indent: 50px;
+    white-space: nowrap;
+    margin: 1px 20px;
+    margin-right: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+  }
+
+  .text:hover {
+    text-decoration: underline;
+    display: inline-block;
+    position: relative;
+    color: #ca5b00;
+  }
+
+  .trackorder{
+    padding-right: 50px;  
+}
+.trackorder:hover {
+    text-decoration: underline;
+    display: inline-block;
+    position: relative;
+    color: #ca5b00;
+  }
+
+
+
+  .hhover-underline-animation {
+    display: inline-block;
+    position: relative;
+    
+  }
+  
+  .hhover-underline-animation:after {
+    margin-left: 30%;
+    content: '';
+    position: absolute;
+    width: 73%;
+    transform: scaleX(0);
+    
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffbb00;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hhover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+  .hhgover-underline-animation {
+    display: inline-block;
+    position: relative;
+    
+  }  
+  .hhgover-underline-animation:after {
+    margin-left: 25%;
+    content: '';
+    position: absolute;
+    width: 77%;
+    transform: scaleX(0);
+    
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffbb00;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .hhgover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+  .hhjover-underline-animation {
+    display: inline-block;
+    position: relative;
+    
+  }  
+  .hhjover-underline-animation:after {
+    margin-left: 33%;
+    content: '';
+    position: absolute;
+    width: 71%;
+    transform: scaleX(0);
+    
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffbb00;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .hhjover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import CartItem from './CartItem/CartItem';
 import useStyles from './styles';
+import './Cart.css';
 
 const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
   const classes = useStyles();
@@ -38,11 +39,13 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
   );
 
   return (
+    <div className='mccinheight'>
     <Container>
       <div className={classes.toolbar} />
       <Typography className={classes.title} variant="h3" gutterBottom>Your Shopping Cart</Typography>
       { !cart.line_items.length ? renderEmptyCart() : renderCart() }
     </Container>
+    </div>
   );
 };
 

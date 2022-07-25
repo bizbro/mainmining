@@ -1,0 +1,86 @@
+body {
+  font-family: Arial;
+    overflow:auto;
+    white-space:nowrap;
+    box-sizing: border-box;
+}
+.mminheight{
+  margin-top: 2.2em;
+  margin-bottom: 19em;
+}
+.mninheight{
+  margin-top: 2.2em;
+  margin-bottom: 10em;
+}
+
+.httitle{
+  padding-top: 100px;
+  text-align: center;
+  font-size: 280%;
+  content:'';
+  flex:1;
+  border-bottom:groove 2px;
+  margin:auto 0.25em;
+}
+
+#Overflow {
+  white-space: initial;
+}
+
+.cccontainer{
+    position: relative;
+    width: 100%;
+    max-width: 760px;
+    margin: 20px auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    
+    border: 1px solid rgba(119, 119, 119, 0.596);
+    border-radius: 8px;
+
+    }
+.notreceived{
+    color:blue;
+    text-decoration: underline;
+}
+
+.photo {
+  height: 100px;
+  width: 100px; 
+  margin-bottom: 20px;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  display:inline;
+  width: 140px;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
