@@ -1,6 +1,6 @@
 {
   "homepage": "http://bizbro.github.io/mainmining",
-  "name": "eccomerce",
+  "name": "mainmining",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +12,7 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.56",
     "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.2",
     "@mui/styled-engine-sc": "^5.8.0",
     "@stripe/react-stripe-js": "^1.1.2",
     "@stripe/stripe-js": "^1.11.0",
