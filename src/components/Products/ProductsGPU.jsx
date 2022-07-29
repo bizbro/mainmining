@@ -7,7 +7,7 @@ import { Typography } from '@material-ui/core';
 
 const ProductsGPU = ({ products, onAddToCart }) => {
   const classes = useStyles();
-  const routeGPU = "http://localhost:3000/graphicscards/";
+  const routeGPU = "http://mainmining.com/graphicscards/";
   if (!products.length) return <p>Loading...</p>;
   console.log("products:",products);
 

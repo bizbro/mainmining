@@ -7,9 +7,9 @@ import { Typography, Divider } from '@material-ui/core';
 
 const HotProducts = ({ products, onAddToCart }) => {
   const classes = useStyles();
-  const routeAsic = "http://localhost:3000/asicminers/";
-  const routeGPU = "http://localhost:3000/graphicscards/";
-  const routeJas = "http://localhost:3000/jasminers/";
+  const routeAsic = "http://mainmining.com/asicminers/";
+  const routeGPU = "http://mainmining.com/graphicscards/";
+  const routeJas = "http://mainmining.com/jasminers/";
 
   const asicarray = [];
   for (var i = 0; i <= 7; i++) {
