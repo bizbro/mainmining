@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useStyles } from 'react';
 import { CssBaseline } from '@material-ui/core';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter, Switch, Route } from 'react-router-dom';
 import SliderHome from './components/MainPage/Slider';
 import { Navbar, Products, Cart, Checkout } from './components';
 import { commerce } from './lib/commerce';
@@ -130,7 +130,7 @@ const App = () => {
     <>
 
     {loading === false ? (
-    <Router>
+    <HashRouter>
       <div>
         <CssBaseline />
         <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
@@ -240,7 +240,7 @@ const App = () => {
         <Footer/>
 
       </div>
-    </Router>
+    </HashRouter>
         ) : (
           <div>
           <img className="loadingbrologo" src={LOGO} alt="MainMining" height="25px" />
