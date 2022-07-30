@@ -142,7 +142,7 @@ const App = () => {
             <HotProducts route={routeAsic} products={products} onAddToCart={handleAddToCart}/>
           </Route>
 
-          <Route exact path={process.env.PUBLIC_URL + '/asicminers'}>
+          <Route exact path={process.env.PUBLIC_URL + '/#/asicminers'}>
             <Products route={routeAsic} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
           </Route>
           <Route exact path={process.env.PUBLIC_URL + '/graphicscards'}>
