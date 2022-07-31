@@ -139,9 +139,9 @@ const App = () => {
        
           <Route exact path={process.env.PUBLIC_URL + '/'} element={<><Home /><HotProducts route={routeAsic} products={products} onAddToCart={handleAddToCart}/></>}/>
 
-          <Route exact path={process.env.PUBLIC_URL + '/#/asicminers'} element={<Products route={routeAsic} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />} />
+          <Route exact path={process.env.PUBLIC_URL + '#/asicminers'} element={<Products route={routeAsic} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />} />
 
-          <Route exact path={process.env.PUBLIC_URL + '/#/about'} element={<AboutUs/>} /> 
+          <Route exact path={process.env.PUBLIC_URL + '#/about'} element={<AboutUs/>} /> 
 
         </Routes>
         <Footer/>

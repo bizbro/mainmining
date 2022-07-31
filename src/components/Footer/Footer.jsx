@@ -16,13 +16,13 @@ function Footer () {
             <section className="footer-info__headerstart">
                 <h4>Information</h4>
             </section>
-            <Link class="hover-underline-animation" href={"/#/about"} underline="none" color='inherit'>
+            <Link class="hover-underline-animation" href={"#/about"} underline="none" color='inherit'>
               <Typography className="typographystart">About us</Typography>
             </Link>
-            <Link class="hcover-underline-animation" href={"/#/contact"} underline="none" color='inherit'>
+            <Link class="hcover-underline-animation" href={"#/contact"} underline="none" color='inherit'>
               <Typography className="typographystart">Contact us</Typography>
             </Link>
-            <Link class="hfover-underline-animation" href={"/#/faq"} underline="none" color='inherit'>
+            <Link class="hfover-underline-animation" href={"#/faq"} underline="none" color='inherit'>
               <Typography className="typographystart">FAQ</Typography>      
             </Link>
         </section>
