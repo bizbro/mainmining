@@ -130,7 +130,7 @@ const App = () => {
     <>
 
     {loading === false ? (
-    
+    <HashRouter>
       <div>
         <CssBaseline />
         <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
@@ -147,7 +147,7 @@ const App = () => {
         <Footer/>
 
       </div>
-  
+    </HashRouter>
         ) : (
           <div>
           <img className="loadingbrologo" src={LOGO} alt="MainMining" height="25px" />
