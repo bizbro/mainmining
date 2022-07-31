@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useStyles } from 'react';
 import { CssBaseline } from '@material-ui/core';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, HashRouter } from 'react-router-dom';
 import SliderHome from './components/MainPage/Slider';
 import { Navbar, Products, Cart, Checkout } from './components';
 import { commerce } from './lib/commerce';
@@ -130,7 +130,7 @@ const App = () => {
     <>
 
     {loading === false ? (
-    <Router>
+    <HashRouter>
       <div>
         <CssBaseline />
         <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
@@ -139,13 +139,15 @@ const App = () => {
        
           <Route exact path={process.env.PUBLIC_URL + '/'} element={<><Home /><HotProducts route={routeAsic} products={products} onAddToCart={handleAddToCart}/></>}/>
 
-          <Route exact path={process.env.PUBLIC_URL + '/asicminers'} element={<Products route={routeAsic} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />} />
+          <Route exact path={process.env.PUBLIC_URL + '/#/asicminers'} element={<Products route={routeAsic} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />} />
+
+          <Route exact path={process.env.PUBLIC_URL + '/#/about'} element={<AboutUs/>} /> 
 
         </Routes>
         <Footer/>
 
       </div>
-    </Router>
+    </HashRouter>
         ) : (
           <div>
           <img className="loadingbrologo" src={LOGO} alt="MainMining" height="25px" />
