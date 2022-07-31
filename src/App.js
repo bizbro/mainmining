@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useStyles } from 'react';
 import { CssBaseline } from '@material-ui/core';
-import { BrowserRouter as Router, HashRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SliderHome from './components/MainPage/Slider';
 import { Navbar, Products, Cart, Checkout } from './components';
 import { commerce } from './lib/commerce';
@@ -130,117 +130,22 @@ const App = () => {
     <>
 
     {loading === false ? (
-    <HashRouter>
+    <Router>
       <div>
         <CssBaseline />
         <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
         
-        <Switch>
+        <Routes>
+       
+          <Route exact path={process.env.PUBLIC_URL + '/'} element={<><Home /><HotProducts route={routeAsic} products={products} onAddToCart={handleAddToCart}/></>}/>
 
-          <Route exact path={process.env.PUBLIC_URL + '/'}>
-            <Home />
-            <HotProducts route={routeAsic} products={products} onAddToCart={handleAddToCart}/>
-          </Route>
+          <Route exact path={process.env.PUBLIC_URL + '/asicminers'} element={<Products route={routeAsic} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />} />
 
-          <Route exact path={process.env.PUBLIC_URL + '/#/asicminers'}>
-            <Products route={routeAsic} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/graphicscards'}>
-            <ProductsGPU route={routeGPU} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/jasminers'}>
-            <ProductsJas route={routeGPU} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
-          </Route>
-
-          <Route exact path={process.env.PUBLIC_URL + '/asicminers/L7'}>
-            <L7Details products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/asicminers/A11Pro'}>
-            <A11ProDetails products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/asicminers/KD5'}>
-            <KD5Details products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/asicminers/KD-BOX Pro'}>
-            <KDBOXProDetails products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/asicminers/BM-K1+'}>
-            <BMK1Details products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/asicminers/DR5'}>
-            <DR5Details products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/asicminers/Z15'}>
-            <Z15Details products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/asicminers/KD Lite'}>
-            <KDLiteDetails products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/asicminers/E9'}>
-            <E9Details products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/asicminers/KD Max'}>
-            <KDMaxDetails products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-
-          <Route exact path={process.env.PUBLIC_URL + '/graphicscards/RTX 3070'}>
-            <RTX3070Details products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/graphicscards/RTX 3090'}>
-            <RTX3090Details products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/graphicscards/RX 6700 XT'}>
-            <RX6700XTDetails products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-
-          <Route exact path={process.env.PUBLIC_URL + '/jasminers/X4-1U'}>
-            <X41UDetails products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/jasminers/X4-C 1U'}>
-            <X41U1UDetails products={products} onAddToCart={handleAddToCart}/>
-          </Route>
-
-          <Route exact path={process.env.PUBLIC_URL + '/track'}>
-            <TrackOrder text={setInput} text2={input}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '//track/orderstatus'}>
-            <PackageNotFound text={input}/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/cart'}>
-            <Cart cart={cart} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart} onEmptyCart={handleEmptyCart} />
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/checkout'}>
-            <Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />
-          </Route>
-
-          <Route exact path={process.env.PUBLIC_URL + '/contact'}>
-            <Mailer />
-          </Route>
-
-          <Route exact path={process.env.PUBLIC_URL + '/about'}> 
-            <AboutUs/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/faq'}> 
-            <Faquestions/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/shipping-policy'}> 
-            <ShippingPolicy/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/privacy-policy'}> 
-            <PrivacyPolicy/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/refund-policy'}> 
-            <RefundPolicy/>
-          </Route>
-          <Route exact path={process.env.PUBLIC_URL + '/terms-of-service'}> 
-            <TermsOfService/>
-          </Route>
-
-        </Switch>
+        </Routes>
         <Footer/>
 
       </div>
-    </HashRouter>
+    </Router>
         ) : (
           <div>
           <img className="loadingbrologo" src={LOGO} alt="MainMining" height="25px" />

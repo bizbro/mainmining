@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './TrackOrder.css';
 import { Divider, Box, Grid, Button, Card, CardMedia, CardContent, CardActions, Typography, IconButton, Link } from '@material-ui/core';
 import { AddShoppingCart } from '@material-ui/icons';
@@ -15,7 +15,7 @@ const TrackOrder = (props) => {
 
   const [enteredText, setEnteredText] = useState("");
 
-  let history = useHistory();
+  let history = useNavigate();
 
   const textChangeHandler = (i) => {
     setEnteredText(i.target.value);
