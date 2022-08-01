@@ -61,7 +61,7 @@ const App = () => {
     setCart(await commerce.cart.retrieve());
   };
 
-  const routeAsic = "http://mainmining.com//asicminers";
+  const routeAsic = "http://mainmining.com/asicminers";
   const routeGPU = "http://mainmining.com/graphicscards";
   const routeJas = "http://mainmining.com/jasminers";
 
@@ -137,11 +137,11 @@ const App = () => {
         
         <Routes>
        
-          <Route exact path={process.env.PUBLIC_URL + '/'} element={<><Home /><HotProducts route={routeAsic} products={products} onAddToCart={handleAddToCart}/></>}/>
+          <Route exact path={process.env.PUBLIC_URL + '/mainmining'} element={<><Home /><HotProducts route={routeAsic} products={products} onAddToCart={handleAddToCart}/></>}/>
 
-          <Route exact path={process.env.PUBLIC_URL + '#/asicminers'} element={<Products route={routeAsic} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />} />
+          <Route exact path={process.env.PUBLIC_URL + '/mainmining/asicminers'} element={<Products route={routeAsic} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />} />
 
-          <Route exact path={process.env.PUBLIC_URL + '#/about'} element={<AboutUs/>} /> 
+          <Route exact path={process.env.PUBLIC_URL + '/mainmining/about'} element={<AboutUs/>} /> 
 
         </Routes>
         <Footer/>
