@@ -9,6 +9,7 @@ const Product = ({route, product, onAddToCart }) => {
 
   const handleAddToCart = () => onAddToCart(product.id, 1);
   var loc = route+product.name;
+  var prodLink = route+product.name.replace(" ","");
   console.log("products: ", loc);
 
   return (
@@ -16,18 +17,18 @@ const Product = ({route, product, onAddToCart }) => {
       <CardMedia className={classes.media} image={product.image.url} title={product.name} />
       <CardContent>
         <div className={classes.cardContent}>
-        <Link href={loc} underline="none" color='inherit'>
-          <Typography href={loc} gutterBottom variant="h5" component="h2">
+        <Link href={prodLink} underline="none" color='inherit'>
+          <Typography href={prodLink} gutterBottom variant="h5" component="h2">
             {product.name}
          </Typography>
          </Link>
-         <Link href={loc} underline="none" color='inherit'>
-          <Typography href={loc} gutterBottom variant="h5" component="h2">
+         <Link href={prodLink} underline="none" color='inherit'>
+          <Typography href={prodLink} gutterBottom variant="h5" component="h2">
             ${product.price.formatted}
           </Typography>
           </Link>
         </div>
-        <Link href={loc} underline="none" color='inherit'>
+        <Link href={prodLink} underline="none" color='inherit'>
           <Typography dangerouslySetInnerHTML={{ __html: product.description }} variant="body2" color="textSecondary" component="p" />
         </Link>
       </CardContent>
