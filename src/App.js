@@ -142,6 +142,91 @@ const App = () => {
 
           <Route exact path={process.env.PUBLIC_URL + '/about'} element={<AboutUs/>} /> 
 
+          <Route exact path={process.env.PUBLIC_URL + '/graphicscards'} element={<ProductsGPU route={routeGPU} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />}/>
+            
+          <Route exact path={process.env.PUBLIC_URL + '/jasminers'} element={<ProductsJas route={routeGPU} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />}/>
+
+          <Route exact path={process.env.PUBLIC_URL + '/asicminers/L7'} element={<L7Details products={products} onAddToCart={handleAddToCart}/>}/>
+            
+      
+          <Route exact path={process.env.PUBLIC_URL + '/asicminers/A11Pro'} element={<A11ProDetails products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/asicminers/KD5'} element={<KD5Details products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/asicminers/KD-BOX Pro'} element={<KDBOXProDetails products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/asicminers/BM-K1+'} element={<BMK1Details products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/asicminers/DR5'} element={<DR5Details products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/asicminers/Z15'} element={<Z15Details products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/asicminers/KD Lite'} element={<KDLiteDetails products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/asicminers/E9'} element={<E9Details products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/asicminers/KD Max'} element={<KDMaxDetails products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+
+          <Route exact path={process.env.PUBLIC_URL + '/graphicscards/RTX 3070'} element={<RTX3070Details products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/graphicscards/RTX 3090'} element={<RTX3090Details products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/graphicscards/RX 6700 XT'} element={<RX6700XTDetails products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+
+          <Route exact path={process.env.PUBLIC_URL + '/jasminers/X4-1U'} element={<X41UDetails products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/jasminers/X4-C 1U'} element={<X41U1UDetails products={products} onAddToCart={handleAddToCart}/>}/>
+            
+          
+
+          <Route exact path={process.env.PUBLIC_URL + '/track'} element={<TrackOrder text={setInput} text2={input}/>}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '//track/orderstatus'} element={<PackageNotFound text={input}/>}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/cart'} element={<Cart cart={cart} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart} onEmptyCart={handleEmptyCart} />}/>
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/checkout'} element={<Checkout cart={cart} order={order} onCaptureCheckout={handleCaptureCheckout} error={errorMessage} />}/>
+            
+          
+
+          <Route exact path={process.env.PUBLIC_URL + '/contact'} element={<Mailer />}/>
+            
+          
+
+          <Route exact path={process.env.PUBLIC_URL + '/faq'} element={<Faquestions/>}/> 
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/shipping-policy'} element={<ShippingPolicy/>}/> 
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/privacy-policy'} element={<PrivacyPolicy/>}/> 
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/refund-policy'} element={<RefundPolicy/>}/> 
+            
+          
+          <Route exact path={process.env.PUBLIC_URL + '/terms-of-service'} element={<TermsOfService/>}/> 
+            
+
+
         </Routes>
         <Footer/>
 
