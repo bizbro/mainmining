@@ -7,7 +7,7 @@ import { Typography } from '@material-ui/core';
 
 const Products = ({ products, onAddToCart }) => {
   const classes = useStyles();
-  const routeAsic = "http://mainmining.com/asicminers/";
+  const routeAsic = "/asicminers/";
   if (!products.length) return <p>Loading...</p>;
   console.log("products:",products);
 

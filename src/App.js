@@ -61,9 +61,9 @@ const App = () => {
     setCart(await commerce.cart.retrieve());
   };
 
-  const routeAsic = "http://mainmining.com/asicminers";
-  const routeGPU = "http://mainmining.com/graphicscards";
-  const routeJas = "http://mainmining.com/jasminers";
+  const routeAsic = "/asicminers";
+  const routeGPU = "/graphicscards";
+  const routeJas = "/jasminers";
 
   const handleAddToCart = async (productId, quantity) => {
     const item = await commerce.cart.add(productId, quantity);
