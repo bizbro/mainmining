@@ -112,7 +112,6 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    console.log('Fruit', input);
   }, [input]);
 
   const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
@@ -130,24 +129,24 @@ const App = () => {
     <>
 
     {loading === false ? (
-    <HashRouter>
+    <Router>
       <div>
         <CssBaseline />
         <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
         
         <Routes>
        
-          <Route exact path={process.env.PUBLIC_URL + '/mainmining'} element={<><Home /><HotProducts route={routeAsic} products={products} onAddToCart={handleAddToCart}/></>}/>
+          <Route exact path={process.env.PUBLIC_URL + '/'} element={<><Home /><HotProducts route={routeAsic} products={products} onAddToCart={handleAddToCart}/></>}/>
 
-          <Route exact path={process.env.PUBLIC_URL + '/mainmining/asicminers'} element={<Products route={routeAsic} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />} />
+          <Route exact path={process.env.PUBLIC_URL + '/asicminers'} element={<Products route={routeAsic} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />} />
 
-          <Route exact path={process.env.PUBLIC_URL + '/mainmining/about'} element={<AboutUs/>} /> 
+          <Route exact path={process.env.PUBLIC_URL + '/about'} element={<AboutUs/>} /> 
 
         </Routes>
         <Footer/>
 
       </div>
-    </HashRouter>
+    </Router>
         ) : (
           <div>
           <img className="loadingbrologo" src={LOGO} alt="MainMining" height="25px" />
