@@ -15,7 +15,7 @@ const TrackOrder = (props) => {
 
   const [enteredText, setEnteredText] = useState("");
 
-  let history = useNavigate();
+  let navigate = useNavigate();
 
   const textChangeHandler = (i) => {
     setEnteredText(i.target.value);
@@ -25,7 +25,7 @@ const TrackOrder = (props) => {
     event.preventDefault();
     props.text(enteredText);
     setEnteredText("");
-    history.push("/track/orderstatus");
+    navigate("/track/orderstatus");
 
   };
   var loc = "/contact";
@@ -39,7 +39,9 @@ const TrackOrder = (props) => {
             <div>
               <form class="example" action="" onSubmit={submitHandler}>
                 <input value={enteredText} type="text" placeholder="Enter tracking number.." name="search" onChange={textChangeHandler}/>
+                
                 <button type="submit"><i class="fa fa-search"></i>Search</button>
+                
               </form>
             </div>
           <Link href={loc} underline="none" color='inherit'>
