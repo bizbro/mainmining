@@ -1,8 +1,14 @@
 import * as React from 'react';
 import {Typography, Box, Divider, Link} from '@material-ui/core';
 import "./Footer.css";
+import { useLocation } from "react-router-dom";
+
 
 function Footer () {
+
+  const { pathname } = useLocation();
+
+  if (pathname === "/track/orderstatus") return null;
 
   return (
     <section className="footer">
