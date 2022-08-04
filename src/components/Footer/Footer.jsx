@@ -9,6 +9,8 @@ function Footer () {
   const { pathname } = useLocation();
 
   if (pathname === "/track/orderstatus") return null;
+  if (pathname === "/cart") return null;
+  if (pathname === "/checkout") return null;
 
   return (
     <section className="footer">
