@@ -18,7 +18,7 @@ const Sdata = [
     title: "RTX 3070 FHR GPU",
     desc: "The RTX 3070 is the optimal GPU for mining, running consistently at 60 MH/s with a power consumption of 110W.",
     cover: "./images/SlideCard/RTX3070.png",
-    link: "/graphicscards/RTX 3070",
+    link: "/graphicscards/RTX3070",
   },
   {
     id: 4,
