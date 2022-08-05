@@ -128,8 +128,7 @@ const App = () => {
 //<divstyle={{ display: 'flex' }}>
   return (
     <>
-  hello world
-    {/* {loading === false ? (
+    {loading === false ? (
     <Router>
       <div>
         <CssBaseline />
@@ -245,7 +244,7 @@ const App = () => {
           <ReactLoading className="loadingbro" color='#ffcd4e' type="spin" height={140} width={80} />
           </div>
           )}
-          */}
+         
           </>
     
   );
