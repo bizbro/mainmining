@@ -2,7 +2,7 @@ const Sdata = [
   {
     id: 1,
     title: "Antminer E9 2400MH/s ETH/ETC",
-    desc: "The revolutionary antminer from Bitmain is here, with its exceptional hashrate and low power consumption!",
+    desc: "The new E9 Antminer from Bitmain is a revolutionary power-efficient miner, with a staggering 1.1 MHs/W ratio",
     cover: "./images/SlideCard/E9.png",
     link: "/asicminers/E9",
   },

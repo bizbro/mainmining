@@ -43,6 +43,8 @@ import X41U1UDetails from './components/Products/Jas/X4-C 1U';
 
 import TrackOrder from './components/trackorder/TrackOrder';
 import PackageNotFound from './components/trackorder/PackageNotFound';
+import FeaturedAlgorithms from './components/MainPage/FeaturedAlgorithms';
+import FeaturedHardware from './components/MainPage/FeaturedHardware';
 
 const App = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -126,8 +128,8 @@ const App = () => {
 //<divstyle={{ display: 'flex' }}>
   return (
     <>
-
-    {loading === false ? (
+  hello world
+    {/* {loading === false ? (
     <Router>
       <div>
         <CssBaseline />
@@ -135,7 +137,14 @@ const App = () => {
         
         <Routes>
        
-          <Route exact path={process.env.PUBLIC_URL + '/'} element={<><Home /><HotProducts route={routeAsic} products={products} onAddToCart={handleAddToCart}/></>}/>
+          <Route exact path={process.env.PUBLIC_URL + '/'} element={<>
+          
+          <Home />
+          <FeaturedAlgorithms/>
+          <FeaturedHardware/>
+          <HotProducts route={routeAsic} products={products} onAddToCart={handleAddToCart}/>
+          
+          </>}/>
 
           <Route exact path={process.env.PUBLIC_URL + '/asicminers'} element={<Products route={routeAsic} products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />} />
 
@@ -236,6 +245,7 @@ const App = () => {
           <ReactLoading className="loadingbro" color='#ffcd4e' type="spin" height={140} width={80} />
           </div>
           )}
+          */}
           </>
     
   );
