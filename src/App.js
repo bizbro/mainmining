@@ -241,7 +241,7 @@ const App = () => {
         ) : (
           <div>
           <img className="loadingbrologo" src={LOGO} alt="MainMining" height="25px" />
-          <ReactLoading className="loadingbro" color='#ffcd4e' type="spin" height={140} width={80} />
+          <ReactLoading className="loadingbro" color='#ffcd4e' type="balls" height={140} width={80} />
           </div>
           )}
          

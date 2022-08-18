@@ -6,8 +6,8 @@ import { Divider, Box, Grid, Button, Card, CardMedia, CardContent, CardActions, 
 
 const FeaturedAlgorithms = () => {
     return (
-        <div>
-<Typography className='ccenter' style={{fontSize:40}} variant="h4" gutterBottom component="div">Featured Algorithms</Typography>
+        <div className="ssliderhomepage">
+<Typography className='ccdwenter' style={{fontSize:40}} variant="h4" gutterBottom component="div">Featured Algorithms</Typography>
 
         <div id="algoimages" class="algorow">
               <div class="algocolumn">
@@ -22,9 +22,7 @@ const FeaturedAlgorithms = () => {
             <div class="algocolumn">
                 <img src='./images/algos/Scrypt.png'/>
             </div>
-            <div class="algocolumn">
-                <img src='./images/algos/Equihash.png'/>
-            </div>
+
         </div>
         </div>
 

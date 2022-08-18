@@ -31,7 +31,7 @@ const HotProducts = ({ products, onAddToCart }) => {
   if (!products.length) return <p>Loading...</p>;
   return (
     <main className={classes.content}>
-      <Typography className='ccenter' style={{fontSize:40}} variant="h4" gutterBottom component="div">All Products</Typography>
+      <Typography className='cctenter' style={{fontSize:40}} variant="h4" gutterBottom component="div">All Products</Typography>
       <div className={classes.toolbar}/>
 
       <Grid container justify="center" spacing={4}  

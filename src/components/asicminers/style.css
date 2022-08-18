@@ -37,3 +37,19 @@ text-align:right;
   /* ou 0 1px si border-style:ridge */
 }
 
+.cctenter {
+  padding-top: 5%;
+  text-align: center;
+  font-size: 122%;
+  content:'';
+  flex:1;
+  border-bottom:groove 2px;
+  margin:auto 0.25em;
+  /* ou 0 1px si border-style:ridge */
+}
+
+@media screen and (max-width: 876px) {
+  .cctenter {
+    padding-top: 15%;;
+  }
+}

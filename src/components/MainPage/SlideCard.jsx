@@ -18,6 +18,7 @@ const SlideCard = () => {
     },
   }
   return (
+    <div className="sdsliderhomepage">
     <>
       <Slider {...settings}>
         {Sdata.map((value, index) => {
@@ -42,6 +43,7 @@ const SlideCard = () => {
         })}
       </Slider>
     </>
+    </div>
   )
 }
 

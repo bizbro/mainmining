@@ -14,17 +14,36 @@
     letter-spacing: 0.15em;
   }
 
+  @media screen and (max-width: 876px) {
+    .ccontent {
+      display: none;
+    }
+    .trackorder{
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 875px) {
+    .toggle-btn {
+      display: none;
+    }
+  
+    .toolbar_logo {
+      margin-left: 0;
+    }
+  }
+
   .text:hover {
     text-decoration: underline;
     display: inline-block;
     position: relative;
     color: #ca5b00;
-  }
+    }
 
   .trackorder{
     padding-right: 50px;  
-}
-.trackorder:hover {
+  }
+  .trackorder:hover {
     text-decoration: underline;
     display: inline-block;
     position: relative;
@@ -36,7 +55,6 @@
   .hhover-underline-animation {
     display: inline-block;
     position: relative;
-    
   }
   
   .hhover-underline-animation:after {
@@ -107,4 +125,50 @@
   .hhjover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+
+  .dropdcontainer {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdbutton {
+    padding: 0;
+    width: 50px;
+    border: 0;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    outline: 0;
+    font-size: 40px;
+  }
+
+  .dropddropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    z-index: 2;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    padding: 8px 12px;
+  }
+  
+  li:hover {
+    background-color: rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 500px) {
+    .mmobileview{
+      display: none;
+    }
   }

@@ -261,7 +261,9 @@ button {
 .loadingbro {
   position: absolute;
   z-index: 15;
-  top: 48%;
+  height: 45px;
+  width: 60px;
+  top: 55%;
   left: 49.5%;
   
 }

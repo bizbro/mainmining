@@ -6,7 +6,7 @@ import { Divider, Box, Grid, Button, Card, CardMedia, CardContent, CardActions, 
 
 const FeaturedHardware = () => {
     return (
-        <div>
+        <div className="ssliderhomepage">
 <Typography className='ccenter' style={{fontSize:40}} variant="h4" gutterBottom component="div">Featured Hardware</Typography>
 
         <div id="algoimages" class="algorow">
