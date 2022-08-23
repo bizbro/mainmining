@@ -68,7 +68,7 @@ function Footer () {
       <hr className="footer-seperator" />
 
       <Box sx={{bgcolor: '#9797973f', color: 'background.paper', p: 2 }}>
-        <Typography className='fontsizelowerfooter' gutterBottom style={{ margin: '0px 0' }}>© MainMining Innovation Holding AS 2022
+        <Typography className='fontsizelowerfooter' gutterBottom style={{ margin: '0px 0' }}>© MainMining Innovation Holding AS 2022 – 17800 Castleton St, City of Industry, CA 91748, United States
         </Typography>
       </Box> 
     </section>
