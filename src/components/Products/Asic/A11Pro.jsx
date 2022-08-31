@@ -55,7 +55,7 @@ const A11ProDetails = ({ products, onAddToCart }) => {
   <Typography  style={{fontSize:28}} variant="h4" gutterBottom component="div">1500MH/s ETH miner</Typography>
   <Typography style={{fontSize:21}} variant="h4" gutterBottom component="div">Innosilicon</Typography>
     <Divider/>
-  <Typography style={{fontSize:25}} variant="h4" gutterBottom component="div">Price: $13,499.00</Typography>
+  <Typography style={{fontSize:25}} variant="h4" gutterBottom component="div">Price: $9,499.00</Typography>
     <Divider/>
 
   <h1 className='nis'>Currently not in Stock</h1>
